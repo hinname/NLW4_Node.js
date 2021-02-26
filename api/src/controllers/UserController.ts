@@ -24,7 +24,7 @@ class UserController {
 
     await usersRepository.save(user); //retorna uma promise de user, por isso o uso do await
 
-    return response.json(user);
+    return response.status(201).json(user);
   }
 }
 
